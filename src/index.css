@@ -1,0 +1,14 @@
+/* src/index.css */
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%vh;
+    height: 100%vh;
+    background-color: rgba(30, 30, 30, 1); /* Match the background color */
+    /* box-sizing: border-box; */
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  

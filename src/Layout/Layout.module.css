@@ -1,0 +1,18 @@
+.layout {
+    background-color: rgba(30, 30, 30, 1);
+    display: flex;
+    padding-top: 24px;
+    flex-direction: column;
+    overflow: scroll;
+    width: 100%;
+    height: 100vh; /* Ensures the layout fills the viewport height */
+    margin: 0;
+    }
+  
+  .container {
+    align-self: center;
+    display: flex;
+    width: 1008px;
+    max-width: 100%vh;
+    flex-direction: column;
+  }
