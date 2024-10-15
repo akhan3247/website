@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css';
+import { ReactTyped }  from "react-typed";
 
 const Hero = () => {
   const socialIcons = [
@@ -14,11 +15,19 @@ const Hero = () => {
         <div className={styles.textContent}>
           <div className={styles.textWrapper}>
             <h2 className={styles.title}>
-              Hi... <br /> I am Abdullah Khan - <br />A{" "}
+              <ReactTyped 
+              strings ={[
+                "Hi..",
+                "Hello..",
+              ]}
+              typeSpeed = {80}
+              loop
+              />
+              <br /> I am Abdullah Khan - <br />A{" "}
               <span className={styles.highlight}>softwareDeveloper</span> ().
             </h2>
             <p className={styles.description}>
-              Born in Saudi Arabia, brought up in India and now curiosity and tech brought me to America. I make full stack web and mobile apps.
+              Born in Saudi Arabia, brought up in India and now curiosity and tech brought me to America. I make Fullstack Web Application and Mobile apps.
             </p>
             <div className={styles.socialLinks}>
               {socialIcons.map((icon, index) => (
