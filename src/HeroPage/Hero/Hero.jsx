@@ -5,9 +5,9 @@ import { ReactTyped }  from "react-typed";
 
 const Hero = () => {
   const socialIcons = [
-    { src: "/assets/github.png", alt: "Github", url: "https://www.github.com/akhan3247" },
-    { src: "/assets/linkedin.png", alt: "Linkedin", url: "https://www.linkedin.com/in/abdullah-khan3247" },
-    { src: "/assets/insta.png", alt: "Instagram", url: "https://www.instagram.com/akhan3247/" }
+    { src: "assets/github.png", alt: "Github", url: "https://www.github.com/akhan3247" },
+    { src: "assets/linkedin.png", alt: "Linkedin", url: "https://www.linkedin.com/in/abdullah-khan3247" },
+    { src: "assets/insta.png", alt: "Instagram", url: "https://www.instagram.com/akhan3247/" }
   ];
 
   return (
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.imageContent}>
-          <img loading="lazy" src="/assets/photo.png" className={styles.profileImage} alt="Abdullah Khan profile" />
+          <img loading="lazy" src="assets/photo.png" className={styles.profileImage} alt="Abdullah Khan profile" />
         </div>
       </div>
     </section>
