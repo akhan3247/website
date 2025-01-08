@@ -45,6 +45,10 @@ const Contact = () => {
               </a>
             ))}
           </div>
+          
+          <p className={styles.copyright}>
+            © {new Date().getFullYear()} Abdullah Khan. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
