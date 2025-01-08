@@ -1,10 +1,13 @@
 .heroPage {
-  height: 100vh; /* Full viewport height */
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align items to the top */
+  justify-content: center;
   align-items: center;
-  scroll-snap-align: start; /* Align for scroll snapping */
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
 }
 
 .header {
@@ -13,7 +16,6 @@
 }
 
 .hero {
-  flex-grow: 1; /* Allow the hero to take up the remaining space */
+  flex-grow: 1;
   width: 100%;
-  /* Add any additional styles for the hero if needed */
 }

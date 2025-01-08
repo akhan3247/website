@@ -1,14 +1,28 @@
 /* src/index.css */
-html, body, #root {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     margin: 0;
     padding: 0;
-    width: 100%vh;
-    height: 100%vh;
-    /* background-color: rgba(30, 30, 30, 1);  */
-    /* box-sizing: border-box; */
-  }
-  
-  *, *::before, *::after {
-    box-sizing: inherit;
-  }
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add smooth scrolling container */
+#root > div {
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+}
+
+/* Make all main sections snap */
+#hero, #about, #experience, #projects {
+    scroll-snap-align: start;
+    height: 100vh;
+}
   

@@ -1,17 +1,149 @@
-.section {
-    height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.backgroundContainer {
+    min-height: 100vh;
+    position: relative;
+    overflow-y: auto;
+    padding: 0;
+    background-color: rgba(30, 30, 30, 1);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    padding-left: 200px;
 }
 
-.backgroundContainer {
-    background-image: url('/public/assets/background.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-   
-  }
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content h2 {
+    font-size: 3rem;
+    padding: 1rem 0;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Ligconsolata', monospace;
+    /* position: sticky; */
+    top: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.experienceCard {
+    background: linear-gradient(32deg, #14143c, #3636A2);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scroll-snap-align: start;
+    height: calc(100vh - 200px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.companyInfo {
+    flex: 1;
+}
+
+.companyInfo h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-family: 'Ligconsolata', monospace;
+}
+
+.period {
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Ligconsolata', monospace;
+}
+
+.companyLogo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-left: 1rem;
+}
+
+.role {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: 'Ligconsolata', monospace;
+}
+
+.description {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.description li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-family: 'Ligconsolata', monospace;
+}
+
+.skills {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.skillTag {
+    background: #fff;
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: 'Ligconsolata', monospace;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 1rem;
+    }
+    
+    .content h2 {
+        font-size: 2.5rem;
+        padding: 0.5rem 0;
+    }
+    
+    .experienceCard {
+        margin: 1rem 0;
+        padding: 1.5rem;
+    }
+    
+    .companyLogo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .description li {
+        font-size: 1rem;
+    }
+}

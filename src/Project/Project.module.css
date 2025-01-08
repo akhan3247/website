@@ -1,17 +1,104 @@
-.section {
-    height: 100vh;
-    scroll-snap-align: start;
+.backgroundContainer {
+    min-height: 100vh;
+    padding-left: 200px;
+    background-color: rgba(30, 30, 30, 1);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.backgroundContainer {
-    background-image: url('/public/assets/background.png');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-  
-  }
+.section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+}
+
+.content h2 {
+    padding-top: -1rem;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Ligconsolata', monospace;
+    margin: 0;
+}
+
+.projectsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.projectCard {
+    background: linear-gradient(32deg, #14143c, #3636A2);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    scroll-snap-align: start;
+   
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+}
+
+.projectCard h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-family: 'Ligconsolata', monospace;
+}
+
+.projectCard p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-family: 'Ligconsolata', monospace;
+    line-height: 1.6;
+}
+
+.techStack {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.techTag {
+    background: #fff;
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: 'Ligconsolata', monospace;
+}
+
+@media (max-width: 768px) {
+    .backgroundContainer {
+        padding-left: 0;
+    }
+
+    .section {
+        padding: 1rem;
+    }
+
+    .projectCard h3 {
+        font-size: 1.5rem;
+    }
+
+    .projectCard p {
+        font-size: 1.1rem;
+    }
+}
